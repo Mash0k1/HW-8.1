@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
  <html lang="en">
  <head>
     <meta charset="UTF-8">
@@ -12,36 +12,36 @@
   <fieldset>
     <legend>Контактна інформація</legend>
     <div>
-      <label>Ім'я:</label>
-      <input type="text">
+      <label for="name-field">Ім'я:</label>
+      <input type="text" id="name-field" name="username">
     </div>
     <div>
-      <label>Телефон:</label>
-      <input type="tel">
+      <label for="phone-field">Телефон:</label>
+      <input type="tel" id="phone-field" name="phone">
     </div>
     <div>
-      <label>Email:</label>
-      <input type="email">
+      <label for="email-field">Email:</label>
+      <input type="email" id="email-field" name="email">
     </div>
     <div>
-      <label>Дата відвідування:</label>
-      <input type="date">
+      <label for="date-field">Дата відвідування:</label>
+      <input type="date" id="date-field" name="visit_date">
     </div>
   </fieldset>
 
   <fieldset>
     <legend>Персональна інформація</legend>
     <div>
-      <label>Вік:</label>
-      <input type="number">
+      <label for="age-field">Вік:</label>
+      <input type="number" id="age-field" name="age">
     </div>
     <div>
-      <label>Улюблена кухня:</label>
-      <input type="text">
+      <label for="cuisine-field">Улюблена кухня:</label>
+      <input type="text" id="cuisine-field" name="cuisine">
     </div>
     <div>
-      <p>Які іще страви ви б хотіли бачити в меню?</p>
-      <textarea></textarea>
+      <p><label for="suggestions-field">Які іще страви ви б хотіли бачити в меню?</label></p>
+      <textarea id="suggestions-field" name="suggestions"></textarea>
     </div>
   </fieldset>
 
@@ -49,24 +49,30 @@
     <legend>Оцінка нашого закладу</legend>
     <p><strong>Чому ви обрали наш заклад?</strong></p>
     <div>
-      <label><input type="checkbox"> Поряд з місцем роботи</label>
+      <input type="checkbox" id="reason-work" name="reason[]" value="work">
+      <label for="reason-work">Поряд з місцем роботи</label>
     </div>
     <div>
-      <label><input type="checkbox"> Побачив рекламу</label>
+      <input type="checkbox" id="reason-ad" name="reason[]" value="ad">
+      <label for="reason-ad">Побачив рекламу</label>
     </div>
     <div>
-      <label><input type="checkbox"> Порадили друзі</label>
+      <input type="checkbox" id="reason-friends" name="reason[]" value="friends">
+      <label for="reason-friends">Порадили друзі</label>
     </div>
     <div>
-      <label><input type="checkbox"> Найкраще співвідношення ціни і якості</label>
+      <input type="checkbox" id="reason-quality" name="reason[]" value="quality">
+      <label for="reason-quality">Найкраще співвідношення ціни і якості</label>
     </div>
 
     <p><strong>Чи будете ви рекомендувати наш заклад своїм знайомим?</strong></p>
     <div>
-      <label><input type="radio" name="recommend"> Так</label>
+      <input type="radio" id="recommend-yes" name="recommend" value="yes">
+      <label for="recommend-yes">Так</label>
     </div>
     <div>
-      <label><input type="radio" name="recommend"> Ні</label>
+      <input type="radio" id="recommend-no" name="recommend" value="no">
+      <label for="recommend-no">Ні</label>
     </div>
   </fieldset>
 
